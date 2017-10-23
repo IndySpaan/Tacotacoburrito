@@ -35,6 +35,10 @@ class App extends Component {
     console.debug("i Mounted! im a big boy", JsonObj);
   }
 
+  enlargeTaco = () =>  {
+
+  }
+
   getRandomQuestion() {
     const { AllQuestions } = this.state;
     const rand = Math.floor((Math.random() * AllQuestions.length));
@@ -69,7 +73,7 @@ class App extends Component {
             {!currentQuestion ? ('Press the Taco to get a tasty question!') : currentQuestion }
           </div>
           <div className="button-container">
-            <img src={logo} onClick={this.onButtonClick} className="App-logo" alt="logo" />
+            <img src={logo} onBlur={this.enlargeTaco} onClick={this.onButtonClick} className="App-logo" alt="logo" />
             <p>Touch the taco for a new question</p>
           </div>
           
