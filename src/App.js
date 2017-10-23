@@ -66,7 +66,7 @@ class App extends Component {
       <div className="App">
         <div className='App-content'>
           <div className='question-container'>
-            {!currentQuestion ? ('Press the button to get a tasty question!') : currentQuestion }
+            {!currentQuestion ? ('Press the Taco to get a tasty question!') : currentQuestion }
           </div>
           <div className="button-container">
             <img src={logo} onClick={this.onButtonClick} className="App-logo" alt="logo" />
