@@ -15,7 +15,7 @@ const JsonObj = {
       "Take three minutes and tell the story of your life in as much detail as possible?",
       "If you could wake up tomorrow having gained any one ability or superpower, what would it be and why?",
       "For what in your life do you feel most grateful?",
-      "What are you most proud about?",
+      "What are you most proud of?",
       "Which is your favorite book?",
   ]
 }
@@ -64,17 +64,15 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Taco bout it</h1>
-        </div>
         <div className='App-content'>
           <div className='question-container'>
             {!currentQuestion ? ('Press the button to get a tasty question!') : currentQuestion }
           </div>
-          <div className='App-button' onClick={this.onButtonClick}>
-            New question!
+          <div className="button-container">
+            <img src={logo} onClick={this.onButtonClick} className="App-logo" alt="logo" />
+            <p>Touch the taco for a new question</p>
           </div>
+          
         </div>
       </div>
     );
