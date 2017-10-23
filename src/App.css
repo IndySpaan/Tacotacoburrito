@@ -103,7 +103,7 @@ html {
 }
 
 p {
-  cfont-family: "Open Sans";
+  font-family: "Open Sans";
   font-size: 14px;
   font-style: italic thin;
   font-variant: normal;
