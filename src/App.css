@@ -1,8 +1,34 @@
+@font-face {
+    font-family: Chunkfive;
+    src: url("fonts/Chunkfive.otf") format("opentype");
+}
+
 body,
 html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Chunkfive;
+  color: white;
+  /* IE10+ */ 
+  background-image: -ms-linear-gradient(top, #086FB3 0%, #53A9FF 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, #086FB3 0%, #53A9FF 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, #086FB3 0%, #53A9FF 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #086FB3), color-stop(100, #53A9FF));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, #086FB3 0%, #53A9FF 100%);
+
+  /* W3C Markup */ 
+  background-image: linear-gradient(to bottom, #086FB3 0%, #53A9FF 100%);
 }
 
 #root {
@@ -19,11 +45,11 @@ html {
 }
 
 .App-logo {
-  height: 150px;
+  height: 100px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: transparent;
   padding: 20px;
   color: white;
 }
@@ -72,8 +98,17 @@ html {
   font-size: large;
 }
 
+.question-container {
+  padding-top: 80px;
+}
+
 p {
-  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 20px;
 }
 
 h1 {

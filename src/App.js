@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import taco from './taco.svg';
 import './App.css';
 
 const JsonObj = {
@@ -73,10 +74,9 @@ class App extends Component {
             {!currentQuestion ? ('Press the Taco to get a tasty question!') : currentQuestion }
           </div>
           <div className="button-container">
-            <img src={logo} onBlur={this.enlargeTaco} onClick={this.onButtonClick} className="App-logo" alt="logo" />
+            <img src={taco} onClick={this.onButtonClick} className="App-logo" alt="logo" />
             <p>Touch the taco for a new question</p>
           </div>
-          
         </div>
       </div>
     );
