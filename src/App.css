@@ -45,7 +45,7 @@ html {
 }
 
 .App-logo {
-  height: 150px;
+  height: 100px;
 }
 
 .App-header {
@@ -105,9 +105,9 @@ html {
 p {
   font-family: "Open Sans";
   font-size: 14px;
-  font-style: italic thin;
+  font-style: italic;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 20px;
 }
 

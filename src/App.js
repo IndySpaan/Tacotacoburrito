@@ -73,7 +73,6 @@ class App extends Component {
             <img src={taco} onClick={this.onButtonClick} className="App-logo" alt="logo" />
             <p>Touch the taco for a new question</p>
           </div>
-          
         </div>
       </div>
     );
